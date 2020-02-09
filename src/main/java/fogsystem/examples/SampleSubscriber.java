@@ -45,10 +45,10 @@ public class SampleSubscriber {
             // conver the recieved string to JsonNode
             try {
                 jsonNode = objectMapper.readTree(message);
+                System.out.println(jsonNode);
             } catch (Exception exception) {
                 exception.printStackTrace();
             }
-
         }
     }
 }
